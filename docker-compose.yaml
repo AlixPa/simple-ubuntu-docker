@@ -1,0 +1,10 @@
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu_container
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./html_tutorial:/home

@@ -1,0 +1,15 @@
+{
+    "name": "Ubuntu Dev Container",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "ubuntu",
+    "workspaceFolder": "/home",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        }
+      }
+    },
+    "postCreateCommand": "echo 'Welcome to your Dev Container!'",
+    "remoteUser": "root"
+}
